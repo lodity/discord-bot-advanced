@@ -1,0 +1,37 @@
+{
+  "name": "discord-bot-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lodity/discord-bot-advanced.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lodity/discord-bot-advanced/issues"
+  },
+  "homepage": "https://github.com/lodity/discord-bot-advanced#readme",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "useTabs": true,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 80
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
