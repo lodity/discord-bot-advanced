@@ -21,7 +21,11 @@ client.on('interactionCreate', async (interaction) => {
 	if (interaction.commandName === 'ping') {
 		await interaction.reply('Pong!');
 	} else if (interaction.commandName === 'order')
-		await interaction.reply({ content: 'Hey there!!!' });
+		await interaction.reply({
+			content: `Hey there!!!\nGet your ${
+				interaction.options.get('food').value
+			}`,
+		});
 });
 
 async function main() {
@@ -33,6 +37,14 @@ async function main() {
 		{
 			name: 'order',
 			description: 'Order something...',
+			options: [
+				{
+					name: 'food',
+					description: 'type of food',
+					type: 3,
+					require: true,
+				},
+			],
 		},
 	];
 
